@@ -1,4 +1,21 @@
+# 忽略所有环境配置文件（保护 API Key 安全）
 .env
-__pycache__/
+.env.local
+
+# 忽略所有数据库文件（防止本地测试数据上传）
 *.db
-.vscode/
+*.db-journal
+
+# 忽略所有日志文件（防止日志高频变动导致提交混乱）
+*.log
+
+# 忽略临时测试文件
+test_out.txt
+output.log
+
+# 忽略用户自定义的监控名单（保护个人隐私）
+watch_list.txt
+
+# 忽略 Python 运行生成的缓存文件夹
+__pycache__/
+*.pyc
